@@ -48,6 +48,7 @@ android {
                                 'src\\main\\res\\receiver',
                                 'src\\main\\res\\noti',
                                 'src\\main\\res\\service',
+                                'src\\main\\res\\schema',
                         ]
             }
         }

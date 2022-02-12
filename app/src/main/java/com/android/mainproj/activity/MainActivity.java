@@ -41,7 +41,7 @@ public class MainActivity
 					"리사이클 뷰 응용", "코드 화면 작성", "액티비티 결과 확인", "클릭 이벤트 응용",
 					"외부 폰트 사용", "공유 설정 활용", "스크롤 뷰 활용", "핸들러 활용", "커스텀 다이얼로그 활용",
 					"비동기작업 사용", "컨텐트 프로바이더 사용", "브로드캐스트 리시버 사용", "푸시 알림 사용",
-					"서비스 이용"
+					"서비스 이용", "URL 스키마 활용"
 			};
 
 	private String loginId;
@@ -185,6 +185,10 @@ public class MainActivity
 			else if(item.equals("서비스 이용"))
 			{
 				intent = new Intent(activity, ServiceActivity.class);
+			}
+			else if(item.equals("URL 스키마 활용"))
+			{
+				intent = new Intent(activity, UrlSchemaActivity.class);
 			}
 
 
