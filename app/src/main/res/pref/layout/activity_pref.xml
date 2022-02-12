@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btn_pref_back"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:contentDescription="뒤로가기 버튼"
+            android:paddingStart="35dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:scaleType="fitStart"
+            app:srcCompat="@drawable/icon_back_arrow" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="ID" />
+
+        <EditText
+            android:id="@+id/et_pref_id"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="8"
+            android:ems="10"
+            android:hint="Input Your ID"
+            android:inputType="textPersonName" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="PW" />
+
+        <EditText
+            android:id="@+id/et_pref_pw"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="8"
+            android:ems="10"
+            android:hint="Input Your Password"
+            android:inputType="textPersonName" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="NAME" />
+
+        <EditText
+            android:id="@+id/et_pref_name"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="8"
+            android:ems="10"
+            android:hint="Input Your NAME"
+            android:inputType="textPersonName" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="AGE" />
+
+        <EditText
+            android:id="@+id/et_pref_age"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="8"
+            android:ems="10"
+            android:hint="Input Your Age"
+            android:inputType="textPersonName" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_pref_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SAVE" />
+
+    <Button
+        android:id="@+id/btn_pref_load"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LOAD" />
+
+</LinearLayout>

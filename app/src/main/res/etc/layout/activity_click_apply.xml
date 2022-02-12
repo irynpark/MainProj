@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btn_click_apply_back"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:contentDescription="뒤로가기 버튼"
+            android:paddingStart="35dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:scaleType="fitStart"
+            app:srcCompat="@drawable/icon_back_arrow" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_click_item_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="추가 아이템 이름 입력"
+        android:inputType="textPersonName"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/btn_click_item_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="아이템 추가" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_click_apply"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

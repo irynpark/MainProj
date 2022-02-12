@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btn_res_code_back"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:contentDescription="뒤로가기 버튼"
+            android:paddingStart="35dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:scaleType="fitStart"
+            app:srcCompat="@drawable/icon_back_arrow" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_res_code_send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="결과코드 전달 화면 종료" />
+
+    <Button
+        android:id="@+id/btn_res_param_send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="파라메터 전달 화면 종료" />
+
+    <Button
+        android:id="@+id/btn_req_code_send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="요청 코드에 따른 응답" />
+
+    <Button
+        android:id="@+id/btn_code_move"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="메인 액티비티에서 코드화면 이동" />
+
+    <Button
+        android:id="@+id/btn_code_custom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="메인에서 커스텀으로" />
+
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btn_service_back"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:contentDescription="뒤로가기 버튼"
+            android:paddingStart="35dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:scaleType="fitStart"
+            app:srcCompat="@drawable/icon_back_arrow" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_local_music_start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="로컬 서비스 음악 실행" />
+
+    <Button
+        android:id="@+id/btn_local_music_stop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="로컬 서비스 음악 중지" />
+
+    <Button
+        android:id="@+id/btn_remote_music_start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="원격 서비스 음악 실행" />
+
+    <Button
+        android:id="@+id/btn_remote_music_stop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="원격 서비스 음악 중지" />
+
+    <Button
+        android:id="@+id/btn_remote_music_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="원격 서비스 음악 재생 시간 확인" />
+
+</LinearLayout>

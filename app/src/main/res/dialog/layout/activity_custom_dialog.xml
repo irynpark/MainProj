@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#606cae"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btn_custom_dialog_back"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:contentDescription="뒤로가기 버튼"
+            android:paddingStart="35dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:scaleType="fitStart"
+            app:srcCompat="@drawable/icon_back_arrow" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_dialog_result"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/purple_200"
+        android:gravity="center"
+        android:text="다이얼로그 결과값 출력"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/btn_call_custom_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@color/white"
+        android:text="커스텀 다이얼로그 호출"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/btn_call_calender_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@color/white"
+        android:text="커스텀 다이얼로그 날짜 값 출력"
+        android:textColor="@color/black" />
+
+</LinearLayout>

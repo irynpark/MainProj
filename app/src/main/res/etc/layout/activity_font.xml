@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btn_font_back"
+            app:srcCompat="@drawable/icon_back_arrow"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:contentDescription="뒤로가기 버튼"
+            android:paddingStart="35dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:scaleType="fitStart" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Font 테스트 입니다"
+        android:textSize="20dp"
+        android:typeface="normal" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Font 테스트 입니다"
+        android:textSize="20dp"
+        android:typeface="sans" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Font 테스트 입니다"
+        android:textSize="20dp"
+        android:typeface="serif" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Font 테스트 입니다"
+        android:textSize="20dp"
+        android:typeface="monospace" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/kangwon"
+        android:text="Font 테스트 입니다"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/tv_font_change"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Font 테스트 입니다"
+        android:textSize="20dp" />
+
+</LinearLayout>

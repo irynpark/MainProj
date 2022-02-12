@@ -1,0 +1,21 @@
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="46dp"
+    android:background="#ffffff"
+    android:orientation="horizontal"
+>
+
+    <ImageButton
+        android:id="@+id/btn_scroll_back"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:contentDescription="뒤로가기 버튼"
+        android:paddingStart="35dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:scaleType="fitStart"
+        app:srcCompat="@drawable/icon_back_arrow" />
+</LinearLayout>
