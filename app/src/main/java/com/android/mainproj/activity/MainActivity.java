@@ -12,6 +12,7 @@ import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Activity;
+import android.content.BroadcastReceiver;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -41,7 +42,7 @@ public class MainActivity
 					"리사이클 뷰 응용", "코드 화면 작성", "액티비티 결과 확인", "클릭 이벤트 응용",
 					"외부 폰트 사용", "공유 설정 활용", "스크롤 뷰 활용", "핸들러 활용", "커스텀 다이얼로그 활용",
 					"비동기작업 사용", "컨텐트 프로바이더 사용", "브로드캐스트 리시버 사용", "푸시 알림 사용",
-					"서비스 이용", "URL 스키마 활용"
+					"서비스 이용", "URL 스키마 활용", "맵 정보 확인"
 			};
 
 	private String loginId;
@@ -190,15 +191,16 @@ public class MainActivity
 			{
 				intent = new Intent(activity, UrlSchemaActivity.class);
 			}
-
+			else if(item.equals("맵 정보 확인"))
+			{
+				intent = new Intent(activity, MapActivity.class);
+			}
 
 			if(intent != null)
 			{
 				//startActivity(intent);
 				resultLauncher.launch(intent);
-
 			}
-
 		}
 	};
 
@@ -227,21 +229,21 @@ public class MainActivity
 				if(intent != null)
 				{
 					String data = intent.getStringExtra("DATA");
-					LogService.info(activity, intent.getStringExtra("DATA"));
+					LogService.info(activity, data);
+
+					Intent moveIntent;
 
 					if(data.equals("CODE_MOVE"))
 					{
-						Intent moveIntent = new Intent(activity, CodeActivity.class);
+						moveIntent = new Intent(activity, CodeActivity.class);
 						resultLauncher.launch(moveIntent);
 					}
-					else if(data.equals("CODE_CUSTOM"))
+					else if(data.equals("CUSTOM_LIST_MOVE"))
 					{
-						Intent moveIntent = new Intent(activity, CustomListActivity.class);
+						moveIntent = new Intent(activity, CustomListActivity.class);
 						resultLauncher.launch(moveIntent);
 					}
 				}
-
-
 			}
 			else if(resultCode == RESULT_CODE_ACTIVITY_RESULT_CANCELED)
 			{
