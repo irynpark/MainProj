@@ -73,7 +73,7 @@ public class UrlSchemaActivity
 
 	private void setting()
 	{
-
+		checkURLSchema();
 	}
 
 	private void addListener()
@@ -83,6 +83,26 @@ public class UrlSchemaActivity
 		btn_run_package.setOnClickListener(listener_run_package);
 
 		btn_url_schema.setOnClickListener(listener_url_schema);
+	}
+
+	private void checkURLSchema()
+	{
+		Intent intent = getIntent();
+
+		if(Intent.ACTION_VIEW.equals(intent.getAction()))
+		{
+			Uri uri = intent.getData();
+
+			if(uri != null)
+			{
+				if(uri.getScheme().equals("mpp") && uri.getHost().equals("android"))
+				{
+					String message = uri.getQueryParameter("message");
+
+					tv_schema_res_msg.setText(message);
+				}
+			}
+		}
 	}
 
 	private View.OnClickListener listener_back_click = new View.OnClickListener()

@@ -28,7 +28,19 @@
         android:theme="@style/Theme.AppCompat.NoActionBar">
         <activity
             android:name=".activity.UrlSchemaActivity"
-            android:exported="false" />
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <data
+                    android:host="android"
+                    android:scheme="mpp"/>
+
+            </intent-filter>
+        </activity>
         <activity
             android:name=".activity.ServiceActivity"
             android:exported="false" />
